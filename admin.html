@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBharat - Content Control Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="admin">
+    <!----------NAVBAR---------->
+    <nav>
+        <span class="logo">Travel <span class="bharat">Bharat</span></span>
+        <div class="main-menu">
+            <span class="menuBtn" onclick="OpenMenu()">&#9776</span>
+            <span class="closeBtn" onclick="CloseMenu()">&#9747</span>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="state.html">States</a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 0.5rem; padding-top: 100px;">Add Your Destination</h2>
+        <p style="color: var(--text-muted); margin-bottom: 3rem;">Share your favorite places with the TravelBharat community by adding them to our catalog.</p>
+
+        <div class="admin-split-layout">
+            <div class="admin-form-card">
+                <h3 style="margin-bottom: 1.5rem; color: var(--secondary); font-size: 1.3rem;">Add New Destination</h3>
+                <form id="adminDestForm">
+                    <div class="form-group">
+                        <label>Destination Title Name</label>
+                        <input type="text" id="admName" required placeholder="e.g. Somnath Temple">
+                    </div>
+                    <div class="form-group">
+                        <label>City Territory</label>
+                        <input type="text" id="admCity" required placeholder="e.g. Veraval">
+                    </div>
+                    <div class="form-group">
+                        <label>State / UT Region</label>
+                        <select id="admState" required>
+                            <option value="">Select a State</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Ladakh">Ladakh</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Assam">Assam</option>
+                            <option value="West Bengal">West Bengal</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Andaman and Nicobar">Andaman and Nicobar</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Classification Category</label>
+                        <select id="admCat" required>
+                            <option value="">Select a Category</option>
+                            <option value="Heritage">Heritage & Culture</option>
+                            <option value="Nature">Nature & Wildlife</option>
+                            <option value="Religious">Religious / Spiritual</option>
+                            <option value="Adventure">Adventure Trails</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Best Season Frame</label>
+                        <input type="text" id="admTime" required placeholder="e.g. November to February">
+                    </div>
+                    <div class="form-group">
+                        <label>Image File / Source URL</label>
+                        <input type="text" id="admImg" placeholder="e.g. gujarat.jpg or external source link">
+                    </div>
+                    <div class="form-group">
+                        <label>Crucial Nearby Points (Comma Separated)</label>
+                        <input type="text" id="admNearby" placeholder="Point A, Point B, Point C">
+                    </div>
+                    <div class="form-group">
+                        <label>Encyclopedia Overview Description</label>
+                        <textarea id="admDesc" rows="4" required placeholder="Provide historical relevance details or travel summary..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%; border-radius: 6px; margin-top: 1rem;">Verify & Save Entity</button>
+                </form>
+            </div>
+
+            <div>
+                <h3 style="margin-bottom: 1.5rem; border-left: 4px solid #e74c3c; padding-left: 0.6rem; color: var(--text-main); font-size: 1.3rem;">
+                    Dynamic Control Center Logs
+                </h3>
+                <div id="adminVerificationGrid" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 TravelBharat Tourism Platform.</p>
+            <p>E-mail: travelbharat@gmail.com</p>
+            <p>Contact: 9996664442</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
