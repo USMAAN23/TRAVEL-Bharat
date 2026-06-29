@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBharat - Search by State</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="state">
+
+    <!----------NAVBAR---------->
+    <nav>
+        <span class="logo">Travel <span class="bharat">Bharat</span></span>
+        <div class="main-menu">
+            <span class="menuBtn" onclick="OpenMenu()">&#9776</span>
+            <span class="closeBtn" onclick="CloseMenu()">&#9747</span>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="state.html">States</a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 0.5rem; padding-top: 100px;">Regional State Directory</h2>
+        <p style="color: var(--text-muted); margin-bottom: 3rem;">Select any strategic state corridor below to instantly cluster its native destinations.</p>
+
+        <div id="stateDirectoryIndex" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.25rem; margin-bottom: 4rem;">
+            <div class="state-strip-card" data-state="Gujarat" style="background:var(--bg-card); border:1px solid var(--border-color); padding:1.5rem; border-radius:8px; cursor:pointer; text-align:center; transition:var(--transition);"><h3>Gujarat</h3></div>
+            <div class="state-strip-card" data-state="Ladakh" style="background:var(--bg-card); border:1px solid var(--border-color); padding:1.5rem; border-radius:8px; cursor:pointer; text-align:center; transition:var(--transition);"><h3>Ladakh</h3></div>
+            <div class="state-strip-card" data-state="Odisha" style="background:var(--bg-card); border:1px solid var(--border-color); padding:1.5rem; border-radius:8px; cursor:pointer; text-align:center; transition:var(--transition);"><h3>Odisha</h3></div>
+            <div class="state-strip-card" data-state="Uttarakhand" style="background:var(--bg-card); border:1px solid var(--border-color); padding:1.5rem; border-radius:8px; cursor:pointer; text-align:center; transition:var(--transition);"><h3>Uttarakhand</h3></div>
+            <div class="state-strip-card" data-state="Goa" style="background:var(--bg-card); border:1px solid var(--border-color); padding:1.5rem; border-radius:8px; cursor:pointer; text-align:center; transition:var(--transition);"><h3>Goa</h3></div>
+            <div class="state-strip-card" data-state="Assam" style="background:var(--bg-card); border:1px solid var(--border-color); padding:1.5rem; border-radius:8px; cursor:pointer; text-align:center; transition:var(--transition);"><h3>Assam</h3></div>
+            <div class="state-strip-card" data-state="West Bengal" style="background:var(--bg-card); border:1px solid var(--border-color); padding:1.5rem; border-radius:8px; cursor:pointer; text-align:center; transition:var(--transition);"><h3>West Bengal</h3></div>
+            <div class="state-strip-card" data-state="Maharashtra" style="background:var(--bg-card); border:1px solid var(--border-color); padding:1.5rem; border-radius:8px; cursor:pointer; text-align:center; transition:var(--transition);"><h3>Maharashtra</h3></div>
+            <div class="state-strip-card" data-state="Karnataka" style="background:var(--bg-card); border:1px solid var(--border-color); padding:1.5rem; border-radius:8px; cursor:pointer; text-align:center; transition:var(--transition);"><h3>Karnataka</h3></div>
+            <div class="state-strip-card" data-state="Rajasthan" style="background:var(--bg-card); border:1px solid var(--border-color); padding:1.5rem; border-radius:8px; cursor:pointer; text-align:center; transition:var(--transition);"><h3>Rajasthan</h3></div>
+            <div class="state-strip-card" data-state="Kerala" style="background:var(--bg-card); border:1px solid var(--border-color); padding:1.5rem; border-radius:8px; cursor:pointer; text-align:center; transition:var(--transition);"><h3>Kerala</h3></div>
+            <div class="state-strip-card" data-state="Delhi" style="background:var(--bg-card); border:1px solid var(--border-color); padding:1.5rem; border-radius:8px; cursor:pointer; text-align:center; transition:var(--transition);"><h3>Delhi</h3></div>
+            <div class="state-strip-card" data-state="Punjab" style="background:var(--bg-card); border:1px solid var(--border-color); padding:1.5rem; border-radius:8px; cursor:pointer; text-align:center; transition:var(--transition);"><h3>Punjab</h3></div>
+            <div class="state-strip-card" data-state="Jammu and Kashmir" style="background:var(--bg-card); border:1px solid var(--border-color); padding:1.5rem; border-radius:8px; cursor:pointer; text-align:center; transition:var(--transition);"><h3>Jammu & Kashmir</h3></div>
+            <div class="state-strip-card" data-state="Himachal Pradesh" style="background:var(--bg-card); border:1px solid var(--border-color); padding:1.5rem; border-radius:8px; cursor:pointer; text-align:center; transition:var(--transition);"><h3>Himachal</h3></div>
+            <div class="state-strip-card" data-state="Madhya Pradesh" style="background:var(--bg-card); border:1px solid var(--border-color); padding:1.5rem; border-radius:8px; cursor:pointer; text-align:center; transition:var(--transition);"><h3>Madhya Pradesh</h3></div>
+            <div class="state-strip-card" data-state="Tamil Nadu" style="background:var(--bg-card); border:1px solid var(--border-color); padding:1.5rem; border-radius:8px; cursor:pointer; text-align:center; transition:var(--transition);"><h3>Tamil Nadu</h3></div>
+            <div class="state-strip-card" data-state="Andaman and Nicobar" style="background:var(--bg-card); border:1px solid var(--border-color); padding:1.5rem; border-radius:8px; cursor:pointer; text-align:center; transition:var(--transition);"><h3>Andaman Islands</h3></div>
+        </div>
+
+        <div id="stateShowcaseWrapper" style="display: none; border-top: 1px solid var(--border-color); padding-top: 3rem;">
+            <h3 id="stateHeadline" style="font-size: 1.75rem; color: var(--primary); margin-bottom: 1.5rem;"></h3>
+            <div id="dynamicStateView" class="content-grid">
+                </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 TravelBharat Tourism Platform.</p>
+            <p>E-mail: travelbharat@gmail.com</p>
+            <p>Contact: 9996664442</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
