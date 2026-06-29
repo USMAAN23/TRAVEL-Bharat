@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBharat - Travel India State by State</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="state">
+    <!----------NAVBAR---------->
+    <nav>
+        <span class="logo">Travel <span class="bharat">Bharat</span></span>
+        <div class="main-menu">
+            <span class="menuBtn" onclick="OpenMenu()">&#9776</span>
+            <span class="closeBtn" onclick="CloseMenu()">&#9747</span>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="state.html">States</a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="container">
+            <h1>Incredible India awaits your journey</h1>
+            <p>From majestic snow-capped Himalayan peaks to pristine golden coastal shores, uncover the rich heritage and timeless legacy of India.</p>
+            <div style="margin-top: 2rem;">
+                <a href="explore.html" class="btn-primary">Start Exploring Now</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container" style="margin-top: 4rem;">
+        <h2 style="font-size: 2rem; font-weight: 800; text-align: center; margin-bottom: 0.5rem;">Featured Destinations</h2>
+        <p style="color: var(--text-muted); text-align: center; margin-bottom: 3rem;">Handpicked cultural marvels and seasonal getaways curated for your next expedition.</p>
+        
+        <div id="featuredGrid" class="content-grid">
+            <div class="info-card">
+                <img src="https://plus.unsplash.com/premium_photo-1697730414399-3d4d9ada98bd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8VmljdG9yaWElMjBNZW1vcmlhbCUyMFBhbGFjZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                <div class="card-body">
+                    <span class="badge">Heritage</span>
+                    <h3 class="card-heading">Victoria Memorial Palace</h3>
+                    <div class="card-subtext">📍 Kolkata, West Bengal</div>
+                    <p class="card-paragraph">An elegant white Makrana marble monument dedicated to Queen Victoria, featuring magnificent classical museum galleries flanked by expansive emerald-green gardens.</p>
+                    <div class="card-section-bar">
+                        <span style="font-size: 0.85rem; font-weight:600; color:var(--text-muted);">🗓️ October to March</span>
+                        <button class="action-trigger" onclick="triggerDetailedLightboxView(7)">Explore Now →</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <img src="https://images.unsplash.com/photo-1606857090627-27ca46667290?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UGFuZ29uZyUyMFRzbyUyMExha2V8ZW58MHx8MHx8fDA%3D" alt="">
+                <div class="card-body">
+                    <span class="badge">Nature</span>
+                    <h3 class="card-heading">Pangong Tso Lake</h3>
+                    <div class="card-subtext">📍 Leh Ladakh</div>
+                    <p class="card-paragraph">An endorheic lake spanning across international borders, situated at an altitude of 4,225 meters. Renowned for its hyper-clear deep-blue brackish waters that brilliantly change shades from teal to cobalt beneath Himalayan peaks.</p>
+                    <div class="card-section-bar">
+                        <span style="font-size: 0.85rem; font-weight:600; color:var(--text-muted);">🗓️ June to September</span>
+                        <button class="action-trigger" onclick="triggerDetailedLightboxView(2)">Explore Now →</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <img src="https://media.istockphoto.com/id/470248962/photo/tea-plantations-sunset.webp?a=1&b=1&s=612x612&w=0&k=20&c=DGX1jcJho3eN_D_Q55NmXuiRse0h374M1xLpJ7ol3Fk=" alt="">
+                <div class="card-body">
+                    <span class="badge">Nature</span>
+                    <h3 class="card-heading">Munnar Tea Hills</h3>
+                    <div class="card-subtext">📍 Idukki, Kerala</div>
+                    <p class="card-paragraph">Situated 1,600 meters above sea level, this pristine hill station features endless layers of rolling tea estates, misty valleys, crisp mountain air, and rare native flora like the Neelakurinji flower.</p>
+                    <div class="card-section-bar">
+                        <span style="font-size: 0.85rem; font-weight:600; color:var(--text-muted);">🗓️ September tot July</span>
+                        <button class="action-trigger" onclick="triggerDetailedLightboxView(12)">Explore Now →</button>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 TravelBharat Tourism Platform.</p>
+            <p>E-mail: travelbharat@gmail.com</p>
+            <p>Contact: 9996664442</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
